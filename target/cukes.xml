@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="149.671">
+<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="16.452">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user select gender type................................................passed
+And user enter first name "test" and last name "testing"....................passed
+And user enter date of birth................................................passed
+And user enter email "tester@gmail.com".....................................passed
+And user fills Password fields "P@ssw0rd" and "P@ssw0rd"....................passed
+When user clicks on register button.........................................passed
+Then success message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="12.392">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid "tester@gmail.com" and "P@ssw0rd"................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could not login with invalid email and password" time="10.934">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with invalid "testing@gmail.com" and "P@ssw0rdss"...........passed
+And user press on login button..............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_currencies | users could change currency" name="user could change currency from the top left drop down list" time="10.575">
+<system-out><![CDATA[Given user change currency to euro..........................................passed
+Then verify the currency symbol changed in the products.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Search | user could search using product name" name="user could search using product name" time="16.715">
+<system-out><![CDATA[Given user click on search box..............................................passed
+When user Enter productName as "book".......................................passed
+And user click on search button.............................................passed
+Then verify url contains "book".............................................passed
+And verify result contains "book"...........................................passed
+And verify the Count number of search "book"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Search | user could search using product name" name="user could search using product name 2" time="16.889">
+<system-out><![CDATA[Given user click on search box..............................................passed
+When user Enter productName as "laptop".....................................passed
+And user click on search button.............................................passed
+Then verify url contains "laptop"...........................................passed
+And verify result contains "laptop".........................................passed
+And verify the Count number of search "laptop"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Search | user could search using product name" name="user could search using product name 3" time="16.559">
+<system-out><![CDATA[Given user click on search box..............................................passed
+When user Enter productName as "nike".......................................passed
+And user click on search button.............................................passed
+Then verify url contains "nike".............................................passed
+And verify result contains "nike"...........................................passed
+And verify the Count number of search "nike"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Search | user could search using product name" name="user could search for product using sku" time="16.518">
+<system-out><![CDATA[Given user click on search box..............................................passed
+When user Enter productName as "SCI_FAITH"..................................passed
+And user click on search button.............................................passed
+Then verify result contains "<productName>".................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Search | user could search using product name" name="user could search for product using sku 2" time="16.124">
+<system-out><![CDATA[Given user click on search box..............................................passed
+When user Enter productName as "APPLE_CAM"..................................passed
+And user click on search button.............................................passed
+Then verify result contains "<productName>".................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Search | user could search using product name" name="user could search for product using sku 3" time="16.059">
+<system-out><![CDATA[Given user click on search box..............................................passed
+When user Enter productName as "SF_PRO_11"..................................passed
+And user click on search button.............................................passed
+Then verify result contains "<productName>".................................passed
+]]></system-out>
+</testcase>
+</testsuite>
