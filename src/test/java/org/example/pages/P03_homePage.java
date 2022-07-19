@@ -112,9 +112,14 @@ public void productsPrice(){
        System.out.println("actual Title"+ actualTitle);
        System.out.println("expected Title"+ expectedTitle);
    }
+    //F06_ Home Sliders
 
+    public WebElement Slider_1(){
+        return Hooks.driver.findElement(By.className("nivoSlider"));
+    }
 
-
+    public WebElement Slider_2(){
+        return Hooks.driver.findElement(By.className("nivoSlider"));
+    }
 }
-
 
