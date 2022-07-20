@@ -11,6 +11,7 @@ import org.testng.asserts.SoftAssert;
 
 public class D02_loginStepDef {
     P02_login log = new P02_login();
+    SoftAssert soft = new SoftAssert();
 
     @Given("user go to login page")
     public void goLoginPage()
@@ -28,11 +29,14 @@ public class D02_loginStepDef {
     }
     @Then("user login to the system successfully")
     public void successLogin(){
-        SoftAssert soft = new SoftAssert();
-        soft.assertEquals(Hooks.driver.getCurrentUrl(),"https://demo.nopcommerce.com/");
 
         log.myAccount();
-        soft.assertTrue(log.myAccount(),"My Account Tab is visible");
+        String expectedUrl="https://demo.nopcommerce.com/";
+        String actualUrl=Hooks.driver.getCurrentUrl();
+        System.out.println("Expected URL " + expectedUrl + "Actual URL "+ actualUrl);
+        soft.assertTrue(actualUrl.contains(expectedUrl));
+
+        soft.assertTrue(log.myAccount().isDisplayed(),"My Account Tab is visible");
         soft.assertAll();
 
     }

@@ -32,8 +32,8 @@ public class P02_login {
         WebElement logInBtn = Hooks.driver.findElement(By.className("login-button"));
         return logInBtn;
     }
-    public boolean myAccount(){
-        boolean myAccount =Hooks.driver.findElement(By.className("ico-account")).isDisplayed();
+    public WebElement myAccount(){
+        WebElement myAccount =Hooks.driver.findElement(By.cssSelector("li>[class=\"ico-account\"]"));
         return myAccount;
     }
     public void failureMessage(){

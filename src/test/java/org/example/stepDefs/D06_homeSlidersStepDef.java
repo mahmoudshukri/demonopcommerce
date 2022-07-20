@@ -2,9 +2,9 @@ package org.example.stepDefs;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
+
 import org.example.pages.P03_homePage;
-import org.testng.Assert;
+
 import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
