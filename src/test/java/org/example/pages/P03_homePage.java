@@ -121,5 +121,31 @@ public void productsPrice(){
     public WebElement Slider_2(){
         return Hooks.driver.findElement(By.className("nivoSlider"));
     }
+    // Follow Us Methods
+    public WebElement followUsLinks(String socialMedia){
+        return Hooks.driver.findElement(By.className(socialMedia));
+    }
+    public String url() {
+        return Hooks.driver.getCurrentUrl();
+    }
+    //Wishlist methods
+    public WebElement getItemWishList(){
+        return Hooks.driver.findElement(By.cssSelector(".item-box:nth-child(3) .add-to-wishlist-button"));
+    }
+    public WebElement getSuccessMsg() {
+        return Hooks.driver.findElement(By.className("content"));
+    }
+
+    public String getMessageBkColor() {
+        return Hooks.driver.findElement(By.cssSelector("div[class=\"bar-notification success\"]")).getCssValue("background-color");
+    }
+
+    public WebElement openWishlist() {
+        return Hooks.driver.findElement(By.className("ico-wishlist"));
+    }
+
+    public WebElement verifyQuantity() {
+        return Hooks.driver.findElement(By.className("qty-input"));
+    }
 }
 
