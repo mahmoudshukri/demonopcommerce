@@ -21,7 +21,8 @@ public class D01_registerStepDef {
         reg.genderBtn().click();
     }
     @And("user enter first name \"(.*)\" and last name \"(.*)\"$")
-    public void Names(String FirstName , String LastName){
+    public void Names(String FirstName , String LastName
+     ){
     reg.enterFirstLastNames(FirstName,LastName);
     }
     @And("user enter date of birth")

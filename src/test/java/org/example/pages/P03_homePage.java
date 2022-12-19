@@ -147,5 +147,15 @@ public void productsPrice(){
     public WebElement verifyQuantity() {
         return Hooks.driver.findElement(By.className("qty-input"));
     }
+    public WebElement poorRadio(){
+        WebElement poorRadio = Hooks.driver.findElement(By.id("pollanswers-3"));
+        return poorRadio;
+    }
+    public WebElement pressVote(){
+        return Hooks.driver.findElement(By.id("vote-poll-1"));
+    }
+    public WebElement errorMsg(){
+        return Hooks.driver.findElement(By.id("block-poll-vote-error-1"));
+    }
 }
 

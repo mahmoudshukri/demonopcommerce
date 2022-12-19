@@ -10,3 +10,4 @@ Feature: F01_Register | users could register with new accounts
     And user fills Password fields "P@ssw0rd" and "P@ssw0rd"
     When user clicks on register button
     Then success message is displayed
+

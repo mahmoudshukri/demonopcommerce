@@ -2,12 +2,14 @@ package org.example.pages;
 
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 
 public class P01_registration {
+
     public WebElement registerBtn(){
         WebElement registerBtn = Hooks.driver.findElement(By.className("ico-register"));
         return registerBtn;

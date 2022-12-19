@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.example.testRunner.runners
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 276.041 s <<< FAILURE! - in org.example.testRunner.runners
-org.example.testRunner.runners.runScenario["user clicks on two sliders and navigates to corresponding url", "F06|Home page sliders"](12)  Time elapsed: 9.37 s  <<< FAILURE!
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 349.463 s <<< FAILURE! - in org.example.testRunner.runners
+org.example.testRunner.runners.runScenario["user clicks on two sliders and navigates to corresponding url", "F06|Home page sliders"](12)  Time elapsed: 12.512 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
@@ -11,7 +11,7 @@ The following asserts failed:
 	at org.example.stepDefs.D06_homeSlidersStepDef.clickSlider_1(D06_homeSlidersStepDef.java:21)
 	at ✽.user click on first slider and navigates to nokia verify url(file:///C:/Users/mshukri/Downloads/Testing/Scholarship-FWD/Web%20frontend%20UI%20testing/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:4)
 
-org.example.testRunner.runners.runScenario["User want to open follow us links", "F07|Follow Us Feature"](15)  Time elapsed: 11.232 s  <<< FAILURE!
+org.example.testRunner.runners.runScenario["User want to open follow us links", "F07|Follow Us Feature"](15)  Time elapsed: 14.518 s  <<< FAILURE!
 java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
 	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
 	at java.util.ArrayList.get(ArrayList.java:435)
